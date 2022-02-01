@@ -1,0 +1,81 @@
+:root{
+
+    //Primary
+    --moderate-cyan: hsl(176, 50%, 47%);
+    --dark-cyan: hsl(176, 72%, 28%);
+
+    //Neutral
+    --black: hsl(0, 0%, 0%);
+    --dark-gray: hsl(0, 0%, 48%);
+
+    //Font
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Commissioner', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body{
+    .hero{
+        background-image: url("../images/image-hero-mobile.jpg");
+        height: 36vh;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        .hero__navigation{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background: -webkit-linear-gradient(top, rgba(0, 0, 0, 1.0), rgba(255, 255, 255, 0.0));
+            background: -moz-linear-gradient(top, rgba(0, 0, 0, 1.0), rgba(255, 255, 255, 0.0));
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 1.0), rgba(255, 255, 255, 0.0));
+            padding: 10%;
+            position: fixed;
+            width: 100%;
+            .hero__navigation__links{
+                position: absolute;
+                display: none;
+                flex-direction: column;
+                width: 80%;
+                background-color: white;
+                top: 90%;
+                border-radius: 10px;
+                .hero__navigation__link{
+                    text-align: left;
+                    padding: 1.5rem 1rem;
+                    a{
+                        text-decoration: none;
+                        font-weight: 700;
+                        color: var(--black);
+                    }
+                }
+
+                hr{
+                    height: 1px;
+                    background-color:var(--dark-gray);
+                    opacity: .5;
+                    border: none;
+                }
+            }
+
+            .menu-btn{
+                width: 16px;
+                height: 15px;
+                background-image: url('../images/icon-hamburger.svg');
+                background-repeat: no-repeat;
+                cursor: pointer;
+            }
+        }
+    }
+
+    main{
+        
+    }
+}

@@ -1,0 +1,85 @@
+:root {
+  --moderate-cyan: hsl(176, 50%, 47%);
+  --dark-cyan: hsl(176, 72%, 28%);
+  --black: hsl(0, 0%, 0%);
+  --dark-gray: hsl(0, 0%, 48%);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Commissioner', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+}
+
+body .hero {
+  background-image: url("../images/image-hero-mobile.jpg");
+  height: 36vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+body .hero .hero__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to bottom, black, rgba(255, 255, 255, 0));
+  padding: 10%;
+  position: fixed;
+  width: 100%;
+}
+
+body .hero .hero__navigation .hero__navigation__links {
+  position: absolute;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  background-color: white;
+  top: 90%;
+  border-radius: 10px;
+}
+
+body .hero .hero__navigation .hero__navigation__links .hero__navigation__link {
+  text-align: left;
+  padding: 1.5rem 1rem;
+}
+
+body .hero .hero__navigation .hero__navigation__links .hero__navigation__link a {
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--black);
+}
+
+body .hero .hero__navigation .hero__navigation__links hr {
+  height: 1px;
+  background-color: var(--dark-gray);
+  opacity: .5;
+  border: none;
+}
+
+body .hero .hero__navigation .menu-btn {
+  width: 16px;
+  height: 15px;
+  background-image: url("../images/icon-hamburger.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
